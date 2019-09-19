@@ -7,20 +7,19 @@
 task main()
 {
 
-while(true)
-{
-	motor[port1] = motor[port2] = motor[port9] = motor[port10] = 127;
-	delay(3000);
+	while(true)
+	{
+		motor[port1] = motor[port2] = motor[port9] = motor[port10] = 127;
+		delay(3000);
 
-	motor[port1] = motor[port2] = motor[port9] = motor[port10] = 0;
-	delay(1000);
+		motor[port1] = motor[port2] = motor[port9] = motor[port10] = 0;
+		delay(1000);
 
-	motor[port1] = motor[port2] = motor[port9] = motor[port10] = -127;
-	delay(3000);
+		motor[port1] = motor[port2] = motor[port9] = motor[port10] = -127;
+		delay(3000);
 
-	motor[port1] = motor[port2] = motor[port9] = motor[port10] = 0;
-	delay(1000);
-
-}
+		motor[port1] = motor[port2] = motor[port9] = motor[port10] = 0;
+		delay(1000);
+	}
 
 }
